@@ -104,11 +104,13 @@ Authorization: Bearer `<token>`{=html}
 
 ### Public Blog Endpoints
 
-  Method  |  Endpoint      |   Description
-  -------- ---------------- ---------------------------
-  GET     | /api/blogs     |  Get all published blogs
-  ------- |----------------  -------------------------
+--------------------------------------------------------
+  Method  |  Endpoint       |   Description
+  --------| ----------------| ---------------------------
+  GET     | /api/blogs      |  Get all published blogs
+  ------- |---------------- | -------------------------
   GET     | /api/blogs/:id  | Get single published blog
+  ------- |---------------- | ------------------------------
 
 Features Implemented:
 
@@ -125,20 +127,24 @@ Features Implemented:
   Method  |  Endpoint           | Description
   -------- -------------------- ------------------------------
   POST    |  /api/blogs         |  Create blog (default: draft)
+  ------- | ------------------- | ----------------------------
   GET     |  /api/blogs/user/me |  Get current user's blogs
+  ------- | ------------------- | ----------------------------
   PUT     |  /api/blogs/:id     | Update blog (owner only)
+  ------- | ------------------  | ---------------------------
   DELETE  | /api/blogs/:id      | Delete blog (owner only)
-
+--------- | -----------------   | --------------------------
 ------------------------------------------------------------------------
 
 ## 📊 Reading Time Algorithm
 
 Reading time is calculated using an average reading speed of 200 words
 per minute.
-
-const wordCount = body.split(/`\s`{=tex}+/).length; const wordsPerMinute
-= 200; reading_time = Math.ceil(wordCount / wordsPerMinute);
-
+```javascript
+const wordCount = body.split(/`\s`{=tex}+/).length;
+const wordsPerMinute = 200;
+reading_time = Math.ceil(wordCount / wordsPerMinute);
+```
 ------------------------------------------------------------------------
 
 ## 🧪 Postman API Collection
