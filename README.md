@@ -33,7 +33,7 @@ structure to reflect real-world backend engineering practices.
 
 ## 🚀 Live Deployment
 
-Base URL: https://blogging-api.onrender.com\
+Base URL: https://altschool-blogging-api-1c6f.onrender.com
 (Update with your actual deployed link)
 
 ------------------------------------------------------------------------
