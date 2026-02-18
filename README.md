@@ -88,25 +88,27 @@ Authorization Header Format:
 
 Authorization: Bearer `<token>`{=html}
 
-------------------------------------------------------------------------
+------------------------------------------------------
 
 ## 📬 API Endpoints Summary
 
 ### Authentication
 
-  Method   Endpoint           Description
-  -------- ------------------ ---------------------
-  POST     /api/auth/signup   Register a new user
-  POST     /api/auth/signin   Login user
+  Method |  Endpoint         |  Description
+  ------ | ------------------|  ---------------------
+  POST   |  /api/auth/signup |  Register a new user
+  -----------------------------------------------------
+  POST   |  /api/auth/signin |  Login user
 
-------------------------------------------------------------------------
+-------------------------------------------------------
 
 ### Public Blog Endpoints
 
-  Method   Endpoint         Description
+  Method  |  Endpoint      |   Description
   -------- ---------------- ---------------------------
-  GET      /api/blogs       Get all published blogs
-  GET      /api/blogs/:id   Get single published blog
+  GET     | /api/blogs     |  Get all published blogs
+  ------- |----------------  -------------------------
+  GET     | /api/blogs/:id  | Get single published blog
 
 Features Implemented:
 
@@ -120,12 +122,12 @@ Features Implemented:
 
 ### Protected Blog Endpoints
 
-  Method   Endpoint             Description
+  Method  |  Endpoint           | Description
   -------- -------------------- ------------------------------
-  POST     /api/blogs           Create blog (default: draft)
-  GET      /api/blogs/user/me   Get current user's blogs
-  PUT      /api/blogs/:id       Update blog (owner only)
-  DELETE   /api/blogs/:id       Delete blog (owner only)
+  POST    |  /api/blogs         |  Create blog (default: draft)
+  GET     |  /api/blogs/user/me |  Get current user's blogs
+  PUT     |  /api/blogs/:id     | Update blog (owner only)
+  DELETE  | /api/blogs/:id      | Delete blog (owner only)
 
 ------------------------------------------------------------------------
 
