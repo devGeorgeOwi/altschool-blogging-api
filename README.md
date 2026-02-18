@@ -97,7 +97,7 @@ Authorization: Bearer `<token>`{=html}
   Method |  Endpoint         |  Description
   ------ | ------------------|  ---------------------
   POST   |  /api/auth/signup |  Register a new user
-  -----------------------------------------------------
+  ------ | -------------------| -----------------------
   POST   |  /api/auth/signin |  Login user
 
 -------------------------------------------------------
@@ -108,7 +108,6 @@ Authorization: Bearer `<token>`{=html}
   Method  |  Endpoint       |   Description
   --------| ----------------| ---------------------------
   GET     | /api/blogs      |  Get all published blogs
-  ------- |---------------- | -------------------------
   GET     | /api/blogs/:id  | Get single published blog
   ------- |---------------- | ------------------------------
 
