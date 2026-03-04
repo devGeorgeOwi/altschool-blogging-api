@@ -97,7 +97,6 @@ Authorization: Bearer `<token>`{=html}
   Method |  Endpoint         |  Description
   ------ | ------------------|  ---------------------
   POST   |  /api/auth/signup |  Register a new user
-  ------ | -------------------| -----------------------
   POST   |  /api/auth/signin |  Login user
 
 -------------------------------------------------------
@@ -109,7 +108,6 @@ Authorization: Bearer `<token>`{=html}
   --------| ----------------| ---------------------------
   GET     | /api/blogs      |  Get all published blogs
   GET     | /api/blogs/:id  | Get single published blog
-  ------- |---------------- | ------------------------------
 
 Features Implemented:
 
@@ -126,13 +124,9 @@ Features Implemented:
   Method  |  Endpoint           | Description
   -------- -------------------- ------------------------------
   POST    |  /api/blogs         |  Create blog (default: draft)
-  -------  -------------------  ----------------------------
   GET     |  /api/blogs/user/me |  Get current user's blogs
-  ------- | ------------------- | ----------------------------
   PUT     |  /api/blogs/:id     | Update blog (owner only)
-  ------- | ------------------  | ---------------------------
   DELETE  | /api/blogs/:id      | Delete blog (owner only)
---------- | -----------------   | --------------------------
 ------------------------------------------------------------------------
 
 ## 📊 Reading Time Algorithm
@@ -189,7 +183,6 @@ Testing Flow:
   Variable    |  Required | Description
   ------------- ---------- ---------------------------
   MONGODB_URI |  Yes     |   MongoDB connection string
-  -----------------------------------------------------
   JWT_SECRET  |  Yes     |   Secret for JWT signing
   PORT        |  No      |   Server port
   NODE_ENV    |  No      |  Environment type
