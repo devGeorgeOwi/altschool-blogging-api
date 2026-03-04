@@ -181,7 +181,7 @@ Testing Flow:
 ## 🌍 Environment Variables
 
   Variable    |  Required | Description
-  ------------- ---------- ---------------------------
+  ------------| ----------|---------------------------
   MONGODB_URI |  Yes     |   MongoDB connection string
   JWT_SECRET  |  Yes     |   Secret for JWT signing
   PORT        |  No      |   Server port
