@@ -122,15 +122,12 @@ Features Implemented:
 ### Protected Blog Endpoints
 
   Method  |  Endpoint           | Description
-  -------- -------------------- ------------------------------
+  --------|-------------------- | ----------------------------
   POST    |  /api/blogs         |  Create blog (default: draft)
-  ------- | ------------------  | -------------------------    
   GET     |  /api/blogs/user/me |  Get current user's blogs
-  ------- | ---------------     | ------------------------
   PUT     |  /api/blogs/:id     | Update blog (owner only)
-          |                     |
   DELETE  | /api/blogs/:id      | Delete blog (owner only)
-------------------------------------------------------------------------
+
 
 ## 📊 Reading Time Algorithm
 
